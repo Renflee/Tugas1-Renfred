@@ -1,0 +1,172 @@
+ul#nav {
+    margin: 0;
+    padding: 0;
+}
+
+ul#nav li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+ul#nav li a {
+    text decoration: none;
+    padding: 10px 0;
+    color: blue;
+    font-weight: bold;
+}
+
+ul#nav li a {
+    text decoration: none;
+    padding: 10px 0;
+    color: blue;
+    font-weight: bold;
+}
+
+button {
+    width: 100px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: red;
+}
+
+h3 {
+    text-align: center;
+    color: red;
+}
+
+h4 {
+    text-align: center;
+    color: black;
+}
+
+p {
+    font: 1em sans-serif;
+    text-align: left;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background: rgb(234, 238, 10);
+    position: relative;
+    animation-name: easteregg;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes easteregg {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 200px;
+        background-color: rgb(255, 0, 0);
+    }
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background: rgb(217, 255, 0);
+    transition: width 2s, height 2s, transform 2s;
+}
+
+div:hover {
+    width: 100px;
+    height: 100px;
+    transform: rotate(180deg);
+}
+
+img:hover {
+    animation: shake 0.3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #000000;
+    border: none;
+    color: #ff0000;
+    text-align: center;
+    font-size: 20px;
+    padding: 30px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 1px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 20px;
+    transition: 0.4s;
+}
+
+.button:hover span {
+    padding-right: 30px;
+}
+
+.button:hover span:after {
+    opacity: 4;
+    right: 0;
+}
